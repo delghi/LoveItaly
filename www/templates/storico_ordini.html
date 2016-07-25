@@ -1,0 +1,22 @@
+
+   <div id="ContainerCarrello">	  
+       <span id="TestoCarrello">Storico Ordini</span>
+	   </br>
+	   </br>
+          <div class="collection">
+			{{#each orders}}
+            <a  class="collection-item ContainerProdottiCarrello">
+		      <span class="LabelNero">N.Ordine:</span>
+			  <span class="TestoNero">{{reference}}</span>
+			  </br>
+		      <span class="LabelNero">Effettuato il:</span>
+			  <span class="TestoNero">{{date_add}}</span>
+			  </br>
+			  		  
+		      <span class="LabelNero">Totale:</span>
+			  <span class="TestoNero">{{total_paid}} €</span>
+			  
+			</a>
+			{{/each}}
+          </div>	   	 
+   </div>

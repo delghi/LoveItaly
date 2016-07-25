@@ -1,0 +1,38 @@
+	   <div id="ContainerCarrello">	  
+       <span id="TestoCarrello">Carrello</span>
+	   </br>
+	   </br>
+          <div class="collection">
+			{{#each this.cart}}
+              <div href="#!" class="collection-item ContainerProdottiCarrello">
+			   <div class="ContainerIMGCarrello">
+			     <img class="ImmagineLista" src="{{img}}">
+			   </div>	 
+			   <span class="NomeProdottoLista">{{name}}</span>
+			   <span class="AziendaProdottoLista">{{#if manufacturer}} {{manufacturer}} {{/if}}</span>
+			   <span class="TestoDisponibileLista">Disponibile</span>
+			   <span class="PrezzoCarrello">{{total}}   €</span>
+			   <label class="TestoQuantitaCarrello"></label>
+               <select class="browser-default QuantitaCarrello">
+                  <option value="1">{{quantity}} </option>
+     
+               </select>
+			   <label class="Elimina btn-flat" id="delete" prodName="{{name}}">Elimina</label>			   
+			  </div>
+			  <p>  </p>
+			  {{/each}}
+          </div>
+		  <span class="TestoGestione">Gestione Ordine:</span>
+		  <span class="PrezzoGestione">2.00€</span>
+		  <span class="TestoGestione">Consegna:</span>
+		  <span class="PrezzoGestione">Gratis</span>
+		  <span id="TestoTotale">TOTALE</span>
+		  <span id="PrezzoTotale">{{this.prezzofinale}} €</span>
+		  <div id="NavStepCarrello" class="col s12">
+               <a href="#!" id="StepAttivo" class="breadcrumb material-icons">shopping_cart</a>
+               <a href="#!" class="breadcrumb material-icons">store</a>
+               <a href="#!" class="breadcrumb material-icons">done</a>
+          </div>
+          <a id="checkout" class="btn ButtonEntra">Effettua l'Ordine</a>
+		  <a id="continua" class="btn ButtonEntra">Continua la Spesa</a>
+	   </div>

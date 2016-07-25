@@ -1,0 +1,145 @@
+
+   <div id="ContainerCarrello">	  
+       <span id="TestoCarrello">I Miei Indirizzi</span>
+	   </br>
+	   </br>   
+
+	   <div class="collection" id="CollectionBianca">
+		 {{#each this}}
+          {{#if this.city}}
+         <div class="collection-item">
+            <form id="formindirizzo">
+				<span class="LabelNero" id="ciccio">Indirizzo</span>
+                <span class="TestoCampiLogin">Via</span>
+                <input class="InputLogin" type="text" placeholder="" value="{{this.address1}}" required>
+              
+                <span class="TestoCampiLogin">Codice Postale</span>
+                <input class="InputLogin" type="text" placeholder="" value="{{this.postcode}}"required>
+                <span class="TestoCampiLogin">Comune</span>
+				  <select class="browser-default SceltaLuoghi" value="{{this.city}}" required>
+				      <option value="" hidden>{{this.city}}</option>
+<option value="123">Agrigento</option>
+<option value="124">Alessandria</option>
+<option value="125">Ancona</option>
+<option value="126">Aosta</option>
+<option value="127">Arezzo</option>
+<option value="128">Ascoli Piceno</option>
+<option value="129">Asti</option>
+<option value="130">Avellino</option>
+<option value="131">Bari</option>
+<option value="132">Barletta-Andria-Trani</option>
+<option value="133">Belluno</option>
+<option value="134">Benevento</option>
+<option value="135">Bergamo</option>
+<option value="136">Biella</option>
+<option value="137">Bologna</option>
+<option value="138">Bolzano</option>
+<option value="139">Brescia</option>
+<option value="140">Brindisi</option>
+<option value="141">Cagliari</option>
+<option value="142">Caltanissetta</option>
+<option value="143">Campobasso</option>
+<option value="144">Carbonia-Iglesias</option>
+<option value="145">Caserta</option>
+<option value="146">Catania</option>
+<option value="147">Catanzaro</option>
+<option value="148">Chieti</option>
+<option value="149">Como</option>
+<option value="150">Cosenza</option>
+<option value="151">Cremona</option>
+<option value="152">Crotone</option>
+<option value="153">Cuneo</option>
+<option value="154">Enna</option>
+<option value="155">Fermo</option>
+<option value="156">Ferrara</option>
+<option value="157">Firenze</option>
+<option value="158">Foggia</option>
+<option value="159">Forlì-Cesena</option>
+<option value="160">Frosinone</option>
+<option value="161">Genova</option>
+<option value="162">Gorizia</option>
+<option value="163">Grosseto</option>
+<option value="164">Imperia</option>
+<option value="165">Isernia</option>
+<option value="166">L'Aquila</option>
+<option value="167">La Spezia</option>
+<option value="168">Latina</option>
+<option value="169">Lecce</option>
+<option value="170">Lecco</option>
+<option value="171">Livorno</option>
+<option value="172">Lodi</option>
+<option value="173">Lucca</option>
+<option value="174">Macerata</option>
+<option value="175">Mantova</option>
+<option value="176">Massa</option>
+<option value="177">Matera</option>
+<option value="178">Medio Campidano</option>
+<option value="179">Messina</option>
+<option value="180">Milano</option>
+<option value="181">Modena</option>
+<option value="182">Monza e della Brianza</option>
+<option value="183">Napoli</option>
+<option value="184">Novara</option>
+<option value="185">Nuoro</option>
+<option value="186">Ogliastra</option>
+<option value="187">Olbia-Tempio</option>
+<option value="188">Oristano</option>
+<option value="189">Padova</option>
+<option value="190">Palermo</option>
+<option value="191">Parma</option>
+<option value="192">Pavia</option>
+<option value="193">Perugia</option>
+<option value="194">Pesaro-Urbino</option>
+<option value="195">Pescara</option>
+<option value="196">Piacenza</option>
+<option value="197">Pisa</option>
+<option value="198">Pistoia</option>
+<option value="199">Pordenone</option>
+<option value="200">Potenza</option>
+<option value="201">Prato</option>
+<option value="202">Ragusa</option>
+<option value="203">Ravenna</option>
+<option value="204">Reggio Calabria</option>
+<option value="205">Reggio Emilia</option>
+<option value="206">Rieti</option>
+<option value="207">Rimini</option>
+<option value="208">Roma</option>
+<option value="209">Rovigo</option>
+<option value="210">Salerno</option>
+<option value="211">Sassari</option>
+<option value="212">Savona</option>
+<option value="213">Siena</option>
+<option value="214">Siracusa</option>
+<option value="215">Sondrio</option>
+<option value="216">Taranto</option>
+<option value="217">Teramo</option>
+<option value="218">Terni</option>
+<option value="219">Torino</option>
+<option value="220">Trapani</option>
+<option value="221">Trento</option>
+<option value="222">Treviso</option>
+<option value="223">Trieste</option>
+<option value="224">Udine</option>
+<option value="225">Varese</option>
+<option value="226">Venezia</option>
+<option value="227">Verbano-Cusio-Ossola</option>
+<option value="228">Vercelli</option>
+<option value="229">Verona</option>
+<option value="230">Vibo Valentia</option>
+<option value="231">Vicenza</option>
+<option value="232">Viterbo</option>                
+                </select>
+
+              
+            </form>
+
+        </div>
+		 {{/if}}
+       {{/each}}
+	   </div>
+	   <button id="ButtonEntra" class="btn ButtonEntra" form="formindirizzo">Aggiorna</button>
+	   		 
+     </div>
+   </div>
+   
+ 

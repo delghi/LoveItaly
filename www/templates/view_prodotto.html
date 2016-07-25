@@ -1,0 +1,88 @@
+
+
+        <form id="Cerca">
+            <input id="Input" type="text" placeholder="Cerca">
+          </form>   
+        <div id="indietro">
+          <a id="Categorie" class="btn">          
+              <img id="FrecciaSX" src="http://s31.postimg.org/6cpmp2ly3/Freccia_SX.png">
+              <span id="TestoCategorie"> {{this.category}}</span>
+          </a>
+        </div>
+          <p id="NomeProdotto">{{this.name}}</br></p>
+          <p id="Azienda">{{#if this.manufacturer_name}} {{this.manufacturer_name}} {{/if}}</p>
+          <span id="TestoDisponibileLarge">Disponibile</a>
+          <span id="Prezzo">{{this.price}} €</span>
+      
+         
+              <div id="ContainerIMG2"> 
+              <img id="IMGProdotto" src="http://loveitaly.altervista.org/api/images/products/{{this.id}}/{{this.id_default_image}}?ws_key=IYI6M35MLB8UVW38Y99RY3YPQWRX5X8H">
+              </div>       
+          
+          <p class="Quantita">Quantità</p>
+          <select class="browser-default SelezioneQuantita" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>			
+          </select>
+		  
+          <ul class="collapsible" data-collapsible="accordion">
+              <li>
+                  <div class="collapsible-header TestoGrigioBold">Dettagli</div>
+                  <div class="collapsible-body"><p class="TestoGrigio">{{this.description}}</p></div>
+              </li>             
+          </ul>
+          
+          <a id="AddCarrello" class="btn">Aggiungi al Carrello</a>          
+          
+         {{#if this.manufacturer_name}}  
+		    <label class="TestoSottotitolo MargineL5" >Scopri l'azienda</label>
+		   	<div class="collection">
+              <a href="#manufacturer/{{this.id_manufacturer}}" class="collection-item"> 
+			     <span class="TestoSottotitolo4"> 
+            {{this.manufacturer_name}}  {{/if}}</span>
+			     <div class="breadcrumb FrecciaAziende" ></div>
+			   </a>	
+            </div>           
+        
+
+        <form action="" id="productcart">
+          <input id="id" type="hidden" name="id_prodotto" value="{{this.id}}">
+          <input id="name" type="hidden" name="name" value="{{this.name}}">
+          <input id="price" type="hidden" name="price" value="{{this.price}}">
+          <input id="img" type="hidden" name="img" value="http://loveitaly.altervista.org/api/images/products/{{this.id}}/{{this.id_default_image}}?ws_key=IYI6M35MLB8UVW38Y99RY3YPQWRX5X8H">
+          <input id="manufacturer" type="hidden" name="manufacture" value="{{this.manufacturer_name}}">
+        </form>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

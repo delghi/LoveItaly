@@ -1,0 +1,26 @@
+
+ 
+<p id="provaerrore"></p>
+
+<div class="collection">
+  {{#each this}}
+
+  {{#if this.name}}
+              <a href="#product/{{this.id}}" class="collection-item" id="prodotto">
+         <div class="ContainerIMG">
+           <img class="ImmagineLista" src="http://loveitaly.altervista.org/api/images/products/{{this.id}}/{{this.id_default_image}}?ws_key=IYI6M35MLB8UVW38Y99RY3YPQWRX5X8H">
+         </div>  
+         <span class="NomeProdottoLista">{{this.name}}</span>
+         {{#if this.manufacturer_name}}
+         <span class="AziendaProdottoLista">{{this.manufacturer_name}}</span>
+         {{/if}}
+         <span class="TestoDisponibileLista">Disponibile</span>
+         <span class="PrezzoLista">{{this.price}}</span>
+        </a>
+   {{/if}}
+
+ 
+
+  {{/each}}
+  </div>
+

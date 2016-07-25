@@ -1,0 +1,25 @@
+
+          <form id="Cerca">
+            <input id="Input" type="text" placeholder="Cerca">
+          </form>	  
+
+          <div id="indietro">
+          <a id="Categorie" class="btn">          
+              <img id="FrecciaSX" src="http://s31.postimg.org/6cpmp2ly3/Freccia_SX.png">
+              <span id="TestoCategorie">Home</span>
+          </a>
+		  </div>
+
+
+
+
+ 	   <div class="collection"  id="lista">
+		 {{#each this}}
+            <a class="collection-item" href="#category/{{this.id}}">	 
+			  <span class="TestoSottotitolo4">{{#if this.name }} {{this.name}} {{/if}}</span>
+			  <div class="breadcrumb FrecciaCategorie" ></div>
+			</a>		
+		 {{/each}}
+       </div>  
+
+
