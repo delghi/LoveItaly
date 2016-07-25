@@ -200,6 +200,10 @@ checkout: function(){
 
                                 },
                                 error: function(XMLHttpRequest, textStatus, errorThrown) {
+                                    //simulazione successo ordine
+                                    //con la macchina virtuale funziona anche la post dell'ordine
+                                    //con l'istanza pubblica di loveItaly invece l'ordine non viene ricevuto dal server (error 500)
+                                    //mentre l'address viene comunque memorizzato nel server
                                     Backbone.history.navigate("success", {
                                                     trigger: true
                                                 });
