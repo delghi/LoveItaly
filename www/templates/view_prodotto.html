@@ -33,7 +33,7 @@
 		  
           <ul class="collapsible" data-collapsible="accordion">
               <li>
-                  <div class="collapsible-header TestoGrigioBold">Dettagli</div>
+                  <div class="collapsible-header LabelNero">Dettagli</div>
                   <div class="collapsible-body"><p class="TestoGrigio">{{this.description}}</p></div>
               </li>             
           </ul>
@@ -45,11 +45,11 @@
 		   	<div class="collection">
               <a href="#manufacturer/{{this.id_manufacturer}}" class="collection-item"> 
 			     <span class="TestoSottotitolo4"> 
-            {{this.manufacturer_name}}  {{/if}}</span>
+            {{this.manufacturer_name}}  </span>
 			     <div class="breadcrumb FrecciaAziende" ></div>
 			   </a>	
             </div>           
-        
+         {{/if}}
 
         <form action="" id="productcart">
           <input id="id" type="hidden" name="id_prodotto" value="{{this.id}}">

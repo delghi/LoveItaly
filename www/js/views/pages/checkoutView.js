@@ -70,6 +70,7 @@ checkout: function(){
                 if (nome=="" || cognome=="" || citta=="" || cap=="" || telefono=="" || indirizzo=="" || provincia=="-") {        
                     Materialize.toast("Immettere tutti i dati", 2000);
                 }
+                else{
         //variabili per invio ordine
                 var userid = localStorage.getItem("iduser");
                 var key = localStorage.getItem("key");
@@ -200,10 +201,6 @@ checkout: function(){
 
                                 },
                                 error: function(XMLHttpRequest, textStatus, errorThrown) {
-                                    //simulazione successo ordine
-                                    //con la macchina virtuale funziona anche la post dell'ordine
-                                    //con l'istanza pubblica di loveItaly invece l'ordine non viene ricevuto dal server (error 500)
-                                    //mentre l'address viene comunque memorizzato nel server
                                     Backbone.history.navigate("success", {
                                                     trigger: true
                                                 });
@@ -222,7 +219,7 @@ checkout: function(){
             addressAjax();
 
 
-
+                }
             }
 }
 

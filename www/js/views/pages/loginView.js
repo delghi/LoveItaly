@@ -113,10 +113,17 @@ define(function(require) {
     	 	},
 
             ospite: function(){
+               if (Localita.options[Localita.selectedIndex].value !="null") {
+                
+               
                 document.getElementById('spinner').style.display = "block";
                 Backbone.history.navigate("home", {
                     trigger : true
                 });
+               }
+               else {
+                  Materialize.toast("Selezionare una località", 2000);
+               }
             }
 
 
